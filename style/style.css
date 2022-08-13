@@ -1,0 +1,58 @@
+.main-window{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: max-content;
+    background-color: rgba(0,0,0,0.5);
+    overflow: auto;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 20px;
+}
+input{
+    min-width: max-content;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 0px 10px;
+}
+button{
+    font-size: 20px;
+    overflow: hidden;
+    max-width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgba(204, 204, 204, 0.096);
+    padding: 0px 10px;
+    cursor: pointer;
+}
+#logout{
+    background-color: transparent;
+    border: none;
+    transition-duration: 0.5s;
+    position: absolute;
+    right: 0;
+    margin: 10px;
+    cursor: pointer;
+}
+#logout:hover{
+    transition-duration: 0.2s;
+    filter: invert(6%) sepia(70%) saturate(5655%) hue-rotate(360deg) brightness(90%) contrast(109%);
+}
+#fields{
+    display: grid;
+    grid-template-columns: repeat(2, min(30vw, 325px));
+    grid-area: 100px;
+    grid-gap: 10px;
+    color: rgba(255, 255, 255, 0.238);
+}
+.fields_amnt{
+    text-align: left;
+    font-size: 1.6em;
+    color: white;
+    background-image: linear-gradient(to right, red , transparent);
+    border-radius: 5px;
+}
